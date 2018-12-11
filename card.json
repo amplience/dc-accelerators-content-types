@@ -52,13 +52,6 @@
       "title": "Description",
       "description": ""
     },
-    "textBackgroundColour": {
-      "type": "string",
-      "minLength": 3,
-      "maxLength": 6,
-      "title": "Text Background Colour",
-      "description": "Insert a hex code for background colour of the text area when hovered over"
-    },
     "link": {
       "title": "Link",
       "description": "add Link",
