@@ -1,8 +1,8 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "{CONTENT_TYPE_BASEPATH}/promobannersection.json",
-  "title": "Promo Banner Section",
-  "description": "Promo Banner Section",
+  "id": "{CONTENT_TYPE_BASEPATH}/promo.json",
+  "title": "Promo List Section",
+  "description": "Promo List Section",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -41,7 +41,7 @@
       "minLength": 0,
       "maxLength": 500,
       "title": "Top Line",
-      "description": "Enter top line of the promo banner section"
+      "description": "Enter top line of the promo list section"
     },
     "toplineColour": {
       "type": "string",
@@ -55,7 +55,7 @@
       "minLength": 0,
       "maxLength": 500,
       "title": "Bottom Line",
-      "description": "Enter bottom line of the promo banner section"
+      "description": "Enter bottom line of the promo list section"
     },
     "bottomlineColour": {
       "type": "string",

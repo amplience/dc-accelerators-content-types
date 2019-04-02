@@ -1,8 +1,8 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "{CONTENT_TYPE_BASEPATH}/blog.json",
-  "title": "Blog Accelerator",
-  "description": "Blog Accelerator",
+  "id": "{CONTENT_TYPE_BASEPATH}/blogpost.json",
+  "title": "Blog Post Accelerator",
+  "description": "Blog Post Accelerator",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -50,7 +50,7 @@
                   "{CONTENT_TYPE_BASEPATH}/video.json",
                   "{CONTENT_TYPE_BASEPATH}/text.json",
                   "{CONTENT_TYPE_BASEPATH}/cardlist.json",
-                  "{CONTENT_TYPE_BASEPATH}/blog.json"
+                  "{CONTENT_TYPE_BASEPATH}/blogpost.json"
                 ]
               }
             }
