@@ -3,6 +3,11 @@
   "id": "{CONTENT_TYPE_BASEPATH}/link.json",
   "title": "Link Accelerator",
   "description": "Link Accelerator",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
   "propertyOrder": [
     "label",
     "value"
