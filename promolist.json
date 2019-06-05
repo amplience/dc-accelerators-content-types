@@ -1,8 +1,8 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "{CONTENT_TYPE_BASEPATH}/promobanner.json",
-  "title": "Promotional Banner",
-  "description": "Promotional banner",
+  "id": "{CONTENT_TYPE_BASEPATH}/promolist.json",
+  "title": "Promotional List",
+  "description": "Promotional list",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -20,9 +20,9 @@
           {
             "properties": {
               "contentType": {
-                "title": "Promo section",
+                "title": "Promo list section",
                 "enum": [
-                  "{CONTENT_TYPE_BASEPATH}/promobannersection.json"
+                  "{CONTENT_TYPE_BASEPATH}/promo.json"
                 ]
               }
             }

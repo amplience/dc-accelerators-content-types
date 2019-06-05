@@ -1,8 +1,8 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "{CONTENT_TYPE_BASEPATH}/homepage.json",
-  "title": "Homepage Accelerator",
-  "description": "Homepage Accelerator",
+  "id": "{CONTENT_TYPE_BASEPATH}/page.json",
+  "title": "Page Accelerator",
+  "description": "Page Accelerator",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -26,7 +26,7 @@
                 "title": "Content Types",
                 "enum": [
                   "{CONTENT_TYPE_BASEPATH}/slider.json",
-                  "{CONTENT_TYPE_BASEPATH}/promobanner.json",
+                  "{CONTENT_TYPE_BASEPATH}/promolist.json",
                   "{CONTENT_TYPE_BASEPATH}/video.json",
                   "{CONTENT_TYPE_BASEPATH}/text.json",
                   "{CONTENT_TYPE_BASEPATH}/externalblock.json",
