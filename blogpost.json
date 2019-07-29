@@ -26,11 +26,50 @@
         }
       ]
     },
+    "author": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255,
+      "title": "Author",
+      "description": ""
+    },
     "title": {
       "type": "string",
       "minLength": 0,
       "maxLength": 255,
       "title": "Title",
+      "description": ""
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Date",
+      "description": ""
+    },
+    "urlSlug": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 100,
+      "title": "Url Slug",
+      "description": ""
+    },
+    "tags": {
+      "type": "array",
+      "title": "Tags",
+      "description": "",
+      "minItems": 0,
+      "maxItems": 10,
+      "items": {
+        "type": "string",
+        "minLength": 0,
+        "maxLength": 255,
+        "title": "Tag",
+        "description": ""
+      }
+    },
+    "readTime": {
+      "type": "integer",
+      "title": "Read Time",
       "description": ""
     },
     "content": {
