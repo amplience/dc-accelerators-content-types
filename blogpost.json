@@ -1,8 +1,8 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "{CONTENT_TYPE_BASEPATH}/blogpost.json",
-  "title": "Blog Post Accelerator",
-  "description": "Blog Post Accelerator",
+  "title": "Blog post accelerator",
+  "description": "Blog post accelerator",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -17,9 +17,9 @@
   "type": "object",
   "properties": {
     "snippet": {
-      "type": "object",
       "title": "Snippet",
       "description": "",
+      "type": "object",
       "allOf": [
         {
           "$ref": "{CONTENT_TYPE_BASEPATH}/snippet.json"
@@ -27,36 +27,36 @@
       ]
     },
     "author": {
+      "title": "Author",
+      "description": "",
       "type": "string",
       "minLength": 0,
-      "maxLength": 255,
-      "title": "Author",
-      "description": ""
+      "maxLength": 255
     },
     "title": {
+      "title": "Title",
+      "description": "",
       "type": "string",
       "minLength": 0,
-      "maxLength": 255,
-      "title": "Title",
-      "description": ""
+      "maxLength": 255
     },
     "date": {
-      "type": "string",
-      "format": "date-time",
       "title": "Date",
-      "description": ""
+      "description": "Creation date (YYYY-MM-DD)",
+      "type": "string",
+      "maxLength": 10
     },
     "urlSlug": {
+      "title": "Url slug",
+      "description": "",
       "type": "string",
       "minLength": 0,
-      "maxLength": 100,
-      "title": "Url Slug",
-      "description": ""
+      "maxLength": 100
     },
     "tags": {
-      "type": "array",
       "title": "Tags",
       "description": "",
+      "type": "array",
       "minItems": 0,
       "maxItems": 10,
       "items": {
@@ -68,11 +68,13 @@
       }
     },
     "readTime": {
-      "type": "integer",
-      "title": "Read Time",
-      "description": ""
+      "title": "Read time",
+      "description": "",
+      "type": "integer"
     },
     "content": {
+      "title": "Content",
+      "description": "",
       "type": "array",
       "items": {
         "allOf": [
@@ -98,8 +100,6 @@
       },
       "minItems": 0,
       "maxItems": 20,
-      "title": "Content",
-      "description": ""
     }
   }
 }
