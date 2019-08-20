@@ -10,8 +10,6 @@
   ],
   "propertyOrder": [
     "slides",
-    "loadingColour",
-    "loadingPosition",
     "loop",
     "navigationDots"
   ],
