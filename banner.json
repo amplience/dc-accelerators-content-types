@@ -1,26 +1,12 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "{CONTENT_TYPE_BASEPATH}/banner.json",
-  "title": "Banner Accelerator",
-  "description": "Banner Accelerator",
+  "title": "Banner",
+  "description": "Banner accelerator",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
     }
-  ],
-  "propertyOrder": [
-    "bannerImage",
-    "subheader",
-    "header",
-    "description",
-    "button",
-    "textPositionLeft",
-    "textPositionTop",
-    "textColour",
-    "bannerColor",
-    "bannerOpacity",
-    "style",
-    "stackMobileLayout"
   ],
   "type": "object",
   "properties": {
@@ -44,37 +30,31 @@
         ]
       },
       "maxItems": 1,
-      "title": "Banner Image",
-      "description": "Select or create an image content"
+      "title": "Banner image"
     },
     "subheader": {
       "type": "string",
       "minLength": 0,
       "maxLength": 255,
-      "title": "Subheader",
-      "description": "add subheader"
+      "title": "Subheader"
     },
     "header": {
       "type": "string",
       "minLength": 0,
       "maxLength": 255,
-      "title": "Header",
-      "description": "add header"
+      "title": "Header"
     },
     "description": {
       "type": "string",
       "minLength": 0,
       "maxLength": 2000,
-      "title": "Description",
-      "description": "add description"
+      "title": "Description"
     },
     "button": {
-      "title": "Button",
-      "description": "add button",
       "type": "object",
       "allOf": [
         {
-          "$ref": "{CONTENT_TYPE_BASEPATH}/link.json"
+          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials#/definitions/link"
         }
       ]
     },
@@ -82,7 +62,7 @@
       "type": "string",
       "minLength": 1,
       "maxLength": 3,
-      "title": "Text Position From The Left",
+      "title": "Text position from the left",
       "description": "Enter a percentage value (without a '%' sign) to position text horizontally from the left"
     },
     "textPositionTop": {
@@ -92,23 +72,19 @@
       "title": "Text position from middle",
       "description": "Enter a percentage value (without a '%' sign) to position text vertically from the middle"
     },
-    "textColour": {
+    "textColor": {
       "type": "string",
-      "minLength": 3,
-      "maxLength": 6,
-      "title": "Font Colour",
-      "description": "Enter a hex value for font colour"
+      "format": "color",
+      "title": "Font color"
     },
     "bannerColor": {
       "type": "string",
-      "minLength": 3,
-      "maxLength": 6,
-      "title": "Banner Color",
-      "description": "Enter a hex value for banner colour"
+      "format": "color",
+      "title": "Banner color"
     },
     "bannerOpacity": {
       "type": "number",
-      "title": "Banner Opacity",
+      "title": "Banner opacity",
       "description": "Enter a value between 0 and 1 (e.g. 0.3)",
       "minimum": 0,
       "maximum": 1.01
@@ -118,12 +94,26 @@
       "minLength": 0,
       "maxLength": 100,
       "title": "Style",
-      "description": "Add classname for CSS styling"
+      "description": "Add class name for CSS styling"
     },
     "stackMobileLayout": {
       "type": "boolean",
-      "title": "Stack Mobile Layout",
+      "title": "Stack mobile layout",
       "description": "Enable to allow banner text to stack underneath the image on small screens"
     }
-  }
+  },
+  "propertyOrder": [
+    "bannerImage",
+    "subheader",
+    "header",
+    "description",
+    "button",
+    "textPositionLeft",
+    "textPositionTop",
+    "textColor",
+    "bannerColor",
+    "bannerOpacity",
+    "style",
+    "stackMobileLayout"
+  ]
 }

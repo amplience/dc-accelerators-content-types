@@ -1,18 +1,12 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "{CONTENT_TYPE_BASEPATH}/blogpost.json",
-  "title": "Blog Post Accelerator",
-  "description": "Blog Post Accelerator",
+  "title": "Blog post",
+  "description": "Blog post accelerator",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
     }
-  ],
-  "propertyOrder": [
-    "snippet",
-    "title",
-    "keywords",
-    "content"
   ],
   "type": "object",
   "properties": {
@@ -22,7 +16,7 @@
       "description": "",
       "allOf": [
         {
-          "$ref": "{CONTENT_TYPE_BASEPATH}/snippet.json"
+          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials#/definitions/snippet"
         }
       ]
     },
@@ -30,8 +24,7 @@
       "type": "string",
       "minLength": 0,
       "maxLength": 255,
-      "title": "Title",
-      "description": ""
+      "title": "Title"
     },
     "content": {
       "type": "array",
@@ -59,8 +52,12 @@
       },
       "minItems": 0,
       "maxItems": 20,
-      "title": "Content",
-      "description": ""
+      "title": "Content"
     }
-  }
+  },
+  "propertyOrder": [
+    "snippet",
+    "title",
+    "content"
+  ]
 }

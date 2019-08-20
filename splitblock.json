@@ -1,16 +1,12 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "{CONTENT_TYPE_BASEPATH}/splitblock.json",
-  "title": "Split Block Accelerators",
-  "description": "Split Block Accelerator",
+  "title": "Split block",
+  "description": "Split block accelerator",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
     }
-  ],
-  "propertyOrder": [
-    "content",
-    "split"
   ],
   "type": "object",
   "properties": {
@@ -24,7 +20,6 @@
           {
             "properties": {
               "contentType": {
-                "title": "content",
                 "enum": [
                   "{CONTENT_TYPE_BASEPATH}/image.json",
                   "{CONTENT_TYPE_BASEPATH}/video.json",
@@ -37,8 +32,7 @@
       },
       "minItems": 2,
       "maxItems": 2,
-      "title": "Content",
-      "description": ""
+      "title": "Content"
     },
     "split": {
       "type": "string",
@@ -47,11 +41,11 @@
         "70/30",
         "30/70"
       ],
-      "title": "Split Ratio",
-      "description": ""
+      "title": "Split ratio"
     }
   },
-  "required": [
+  "propertyOrder": [
+    "content",
     "split"
   ]
 }

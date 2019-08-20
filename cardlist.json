@@ -1,17 +1,12 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "{CONTENT_TYPE_BASEPATH}/cardlist.json",
-  "title": "Card List Accelerator",
-  "description": "Card List Accelerator",
+  "title": "Card list",
+  "description": "Card list accelerator",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
     }
-  ],
-  "propertyOrder": [
-    "object",
-    "heroList",
-    "cards"
   ],
   "type": "object",
   "properties": {
@@ -19,8 +14,7 @@
       "type": "string",
       "minLength": 0,
       "maxLength": 50,
-      "title": "Header",
-      "description": ""
+      "title": "Header"
     },
     "heroList": {
       "type": "boolean",
@@ -37,7 +31,6 @@
           {
             "properties": {
               "contentType": {
-                "title": "Card Content",
                 "enum": [
                   "{CONTENT_TYPE_BASEPATH}/card.json"
                 ]
@@ -47,9 +40,13 @@
         ]
       },
       "minItems": 1,
-      "maxItems": 19,
-      "title": "Cards",
-      "description": ""
+      "maxItems": 20,
+      "title": "Cards"
     }
-  }
+  },
+  "propertyOrder": [
+    "header",
+    "heroList",
+    "cards"
+  ]
 }

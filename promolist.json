@@ -1,8 +1,8 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "{CONTENT_TYPE_BASEPATH}/promolist.json",
-  "title": "Promotional List",
-  "description": "Promotional list",
+  "title": "Promo list",
+  "description": "Promo list accelerator",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -10,8 +10,9 @@
   ],
   "type": "object",
   "properties": {
-    "bannerSection": {
+    "promoItems": {
       "type": "array",
+      "title": "Promo list items",
       "items": {
         "allOf": [
           {
@@ -20,7 +21,6 @@
           {
             "properties": {
               "contentType": {
-                "title": "Promo list section",
                 "enum": [
                   "{CONTENT_TYPE_BASEPATH}/promo.json"
                 ]
@@ -32,5 +32,8 @@
       "minItems": 1,
       "maxItems": 3
     }
-  }
+  },
+  "propertyOrder": [
+    "promoItems"
+  ]
 }

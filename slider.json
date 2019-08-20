@@ -1,17 +1,12 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "{CONTENT_TYPE_BASEPATH}/slider.json",
-  "title": "Slider Accelerator",
-  "description": "Slider Accelerator",
+  "title": "Slider",
+  "description": "Slider accelerator",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
     }
-  ],
-  "propertyOrder": [
-    "slides",
-    "loop",
-    "navigationDots"
   ],
   "type": "object",
   "properties": {
@@ -25,7 +20,6 @@
           {
             "properties": {
               "contentType": {
-                "title": "slides",
                 "enum": [
                   "{CONTENT_TYPE_BASEPATH}/banner.json",
                   "{CONTENT_TYPE_BASEPATH}/image.json",
@@ -37,19 +31,21 @@
         ]
       },
       "title": "Slides",
-      "description": "",
       "minItems": 1,
       "maxItems": 8
     },
     "loop": {
       "type": "boolean",
-      "title": "Loop slider",
-      "description": ""
+      "title": "Loop slider"
     },
     "navigationDots": {
       "type": "boolean",
-      "title": "Navigation Dots",
-      "description": ""
+      "title": "Navigation dots"
     }
-  }
+  },
+  "propertyOrder": [
+    "slides",
+    "loop",
+    "navigationDots"
+  ]
 }

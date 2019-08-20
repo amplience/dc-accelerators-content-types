@@ -1,19 +1,12 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "{CONTENT_TYPE_BASEPATH}/card.json",
-  "title": "Card Accelerator",
-  "description": "Card Accelerator",
+  "title": "Card",
+  "description": "Card accelerator",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
     }
-  ],
-  "propertyOrder": [
-    "cardImage",
-    "cardName",
-    "description",
-    "linkValue",
-    "link"
   ],
   "type": "object",
   "properties": {
@@ -34,32 +27,33 @@
           }
         }
       ],
-      "title": "Card Image",
-      "description": "Select or create an image content"
+      "title": "Card image"
     },
     "cardName": {
       "type": "string",
       "minLength": 0,
       "maxLength": 150,
-      "title": "Card name",
-      "description": ""
+      "title": "Card name"
     },
     "description": {
       "type": "string",
       "minLength": 0,
       "maxLength": 200,
-      "title": "Description",
-      "description": ""
+      "title": "Description"
     },
     "link": {
-      "title": "Link",
-      "description": "add Link",
       "type": "object",
       "allOf": [
         {
-          "$ref": "{CONTENT_TYPE_BASEPATH}/link.json"
+          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials#/definitions/link"
         }
       ]
     }
-  }
+  },
+  "propertyOrder": [
+    "cardImage",
+    "cardName",
+    "description",
+    "link"
+  ]
 }
