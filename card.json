@@ -12,7 +12,12 @@
     "cardImage",
     "cardName",
     "description",
-    "linkValue",
+    "link"
+  ],
+  "required": [
+    "cardImage",
+    "cardName",
+    "description",
     "link"
   ],
   "type": "object",
@@ -39,14 +44,14 @@
     },
     "cardName": {
       "type": "string",
-      "minLength": 0,
+      "minLength": 1,
       "maxLength": 150,
       "title": "Card name",
       "description": ""
     },
     "description": {
       "type": "string",
-      "minLength": 0,
+      "minLength": 1,
       "maxLength": 200,
       "title": "Description",
       "description": ""

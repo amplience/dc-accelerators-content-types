@@ -9,10 +9,23 @@
     }
   ],
   "propertyOrder": [
-    "snippet",
     "title",
-    "keywords",
-    "content"
+    "author",
+    "date",
+    "urlSlug",
+    "tags",
+    "readTime",
+    "content",
+    "snippet"
+  ],
+  "required": [
+    "title",
+    "author",
+    "date",
+    "urlSlug",
+    "readTime",
+    "content",
+    "snippet"
   ],
   "type": "object",
   "properties": {
@@ -30,14 +43,14 @@
       "title": "Author",
       "description": "",
       "type": "string",
-      "minLength": 0,
+      "minLength": 1,
       "maxLength": 255
     },
     "title": {
       "title": "Title",
       "description": "",
       "type": "string",
-      "minLength": 0,
+      "minLength": 1,
       "maxLength": 255
     },
     "date": {
@@ -50,7 +63,7 @@
       "title": "Url slug",
       "description": "",
       "type": "string",
-      "minLength": 0,
+      "minLength": 1,
       "maxLength": 100
     },
     "tags": {
@@ -61,7 +74,7 @@
       "maxItems": 10,
       "items": {
         "type": "string",
-        "minLength": 0,
+        "minLength": 1,
         "maxLength": 255,
         "title": "Tag",
         "description": ""
@@ -98,7 +111,7 @@
           }
         ]
       },
-      "minItems": 0,
+      "minItems": 1,
       "maxItems": 20,
     }
   }

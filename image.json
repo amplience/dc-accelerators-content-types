@@ -14,6 +14,10 @@
     "seoText",
     "roundel"
   ],
+  "required": [
+    "image",
+    "imageAltText"
+  ],
   "type": "object",
   "properties": {
     "image": {
@@ -28,14 +32,14 @@
     },
     "imageAltText": {
       "type": "string",
-      "minLength": 0,
+      "minLength": 1,
       "maxLength": 150,
       "title": "Image alt text",
       "description": "insert image alt text"
     },
     "seoText": {
       "type": "string",
-      "minLength": 0,
+      "minLength": 1,
       "maxLength": 100,
       "title": "SEO Text",
       "description": "e.g. ladies-sunglasses"
