@@ -32,7 +32,8 @@
             "Top Left",
             "Top Right",
             "Bottom Left",
-            "Bottom Right"
+            "Bottom Right",
+            "Center"
           ],
           "title": "Roundel position",
           "description": "Roundel position is centered by default"
@@ -66,9 +67,9 @@
       "properties": {
         "image": {
           "type": "object",
-          "allOf": [
+          "anyOf": [
             {
-              "$ref": "{CONTENT_TYPE_BASEPATH}/image.json"
+              "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
             }
           ]
         },
