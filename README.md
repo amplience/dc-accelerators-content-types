@@ -1,6 +1,6 @@
 <div align="center">
     <a href="http://docs.amplience.net/">
-        <img src="https://i1.adis.ws/i/ampproduct/Amplience_Dynamic_Content_Identifier?w=560" alt="Amplience Dynamic  Content" title="Amplience Dynamic Content" style="margin-left:auto; margin-right:auto; display:block;" width="560px" />
+        <img src="https://amp-github-assets.s3-eu-west-1.amazonaws.com/header.png" alt="Amplience Dynamic  Content" title="Amplience Dynamic Content" style="margin-left:auto; margin-right:auto; display:block;" width="560px" />
     </a>
 </div>
 

@@ -1,6 +1,6 @@
 {
   "name": "dc-accelerators-content-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Content Types for DC accelerators",
   "main": "index.js",
   "scripts": {
