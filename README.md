@@ -1,9 +1,3 @@
-<div align="center">
-    <a href="http://docs.amplience.net/">
-        <img src="https://amp-github-assets.s3-eu-west-1.amazonaws.com/header.png" alt="Amplience Dynamic  Content" title="Amplience Dynamic Content" style="margin-left:auto; margin-right:auto; display:block;" width="560px" />
-    </a>
-</div>
-
 # Dynamic Content Accelerators content types
 
 This is a collection of the content types used for the Amplience Dynamic Content Accelerators.
